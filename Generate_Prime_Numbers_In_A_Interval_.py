@@ -1,11 +1,12 @@
-n=int(input())
-m=int(input())
-for i in range (n,m+1):
-    c=0
-    for j in range (1,i+1):
-        
-        if(i%j==0):
-            c+=1
-    
-    if c==2:
+import math
+def prime(n):
+    for i in range(2,int(math.sqrt(n))+1):
+        if(n%i==0):
+            return 0
+    return 1
+a=int(input())
+b=int(input())
+c=0
+for i in range(a,b+1):
+    if(prime(i)==1 and i!=1):
         print(i)
