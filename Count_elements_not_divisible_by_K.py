@@ -1,7 +1,8 @@
-n,k=map(int,input().split())
-arr=list(map(int,input().split()))
-c=0
-for i in range (n):
-    if(arr[i]%k!=0):
+n,m=map(int,input().split())
+a=list(map(int,input().split()))
+c,s=0,0
+for i in range(n):
+    if(a[i]%m!=0):
         c+=1
 print(c)
+    
