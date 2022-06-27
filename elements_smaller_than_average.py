@@ -1,8 +1,11 @@
 n=int(input())
-arr=list(map(int,input().split()))
-avg=sum(arr)/n
+a=list(map(int,input().split()))
 c=0
-for i in arr:
-    if(i<=avg):
+s=0
+for i in range(n-1,-1,-1):
+    s+=a[i]
+av=s//n
+for i in range(n):
+    if a[i]<=av:
         c+=1
 print(c)
