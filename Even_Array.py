@@ -1,10 +1,10 @@
 n=int(input())
-arr=list(map(int,input().split()))
+a=list(map(int,input().split()))
 c=0
-for i in arr:
-    if(i%2!=0):
+for i in range(n-1,-1,-1):
+    if(a[i]%2==0):
         c+=1
-if(c==0):
+if(c==n):
     print("True")
 else:
     print("False")
