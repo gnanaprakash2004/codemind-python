@@ -1,13 +1,13 @@
-n=input()
-v=input()
+s=input()
+e=str(input())
+a=s.split()
 c=0
-l=len(n)
-for i in range(l):
-    if(n[i]==v):
+for i in s:
+    c+=1
+    if(i==e):
         print("True")
-        print(i)
+        print(c-1)
         break
 else:
-    print(False)
-
-        
+    print("False")
+    
