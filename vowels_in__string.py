@@ -1,13 +1,13 @@
-n=input()
-vo='aeiouAEIOU'
-arr=[]
-for i in (n):
-    if i in vo:
-        if i not in arr:
-            
-            arr.append(i)
-if(len(arr)==0):
-    print(-1)
+s=input()
+v='aeiouAEIOU'
+m=''
+for i in s:
+    if i in v:
+        if i not in m:
+            m+=i
+if(len(m)==0):
+    print(0)
 else:
-    for i in arr:
-        print(i,end=' ')
+    print(*m)
+        
+        
