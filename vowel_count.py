@@ -1,8 +1,7 @@
-n=input()
-vo='aeiouAEIOU'
-arr=[]
+s=input()
+a='aeiouAEIOU'
 c=0
-for i in (n):
-    if i in vo:
-       c+=1
+for i in s:
+    if i in a:
+        c+=1
 print(c)
