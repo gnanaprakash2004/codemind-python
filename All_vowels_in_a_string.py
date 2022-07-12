@@ -1,13 +1,13 @@
-a=input()
-f=0
-vo='aeiou'
-for i in vo:
+s=input()
+a='aeiou'
+b=''
+for i in s:
     if i in a:
-        f=1
-    else:
-        f=0
-        break
-if(f==1):
+        if i not in b:
+            b+=i
+        
+if(len(b)==5):
     print("True")
 else:
     print("False")
+    
