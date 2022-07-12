@@ -1,5 +1,4 @@
-a=input()
-arr=list(a.split())
-l=len(arr)
-for i in range(l-1,-1,-1):
-    print(arr[i][::-1],end=' ')
+s=input()
+a=s.split()
+for i in range(len(a)-1,-1,-1):
+    print(str(a[i])[::-1],end=' ')
