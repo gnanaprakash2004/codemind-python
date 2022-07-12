@@ -1,14 +1,10 @@
-import string
-  
-def ispangram(str):
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-    for char in alphabet:
-        if char not in str.lower():
-            return False
-  
-    return True
-string = str(input())
-if(ispangram(string) == True):
+s=input()
+m=''
+for i in s:
+    if i in "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM":
+        if i not in m:
+            m+=i
+if(len(m)>=26):
     print("True")
 else:
     print("False")
