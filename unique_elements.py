@@ -1,7 +1,10 @@
 n=int(input())
 a=list(map(int,input().split()))
-s=[]
+#print(a)
+c=[]
 for i in range(n):
-    if a[i] not in s:
-        s.append(a[i])
-print(*s)
+    for j in range(n):
+            if a[i] not in c:
+                c.append(a[i])
+print(*c)
+            
