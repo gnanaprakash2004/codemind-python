@@ -1,4 +1,4 @@
-def col(l):
+def col_sor(l):
     m=sorted(l)
     n=sorted(l,reverse=True)
     return l==m or l==n
@@ -8,10 +8,10 @@ for i in range(a):
     x=list(map(int,input().split()))
     mat.append(x)
 cnt=0
-for j in range(b):
+for i in range(b):
     z=[]
-    for i in range(a):
-        z.append(mat[i][j])
-    if col(z):
+    for j in range(a):
+        z.append(mat[j][i])
+    if col_sor(z):
         cnt+=1
 print(cnt)
