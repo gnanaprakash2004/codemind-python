@@ -1,8 +1,10 @@
-a=int(input())
-arr=list(map(int,input().split()))
-a,b=map(int,input().split())
-su=0
-for i in arr:
-    if(i<a or i>b):
-        su+=i
-print(su)
+n=int(input())
+a=list(map(int,input().split()))
+x,y=map(int,input().split())
+s=0
+for i in a:
+    if i<x:
+        s+=i
+    elif i>x and i>y:
+        s+=i
+print(s)  
