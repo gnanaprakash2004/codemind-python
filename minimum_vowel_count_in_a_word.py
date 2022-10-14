@@ -1,17 +1,12 @@
-a=input()
-arr=list(a.split())
-##print(arr)
-vo='aeiouAEIOU'
-mi=100
-fl=0
-for i in (arr):
+s=input()
+z=s.split()
+ma=1000
+v="aeiouAEIOU"
+for i in z:
     c=0
-    for j in i:
-        if j in (vo):
+    for j in range(len(i)):
+        if i[j] in v:
             c+=1
-            fl=1
-    if(mi>c):
-        mi=c
-print(mi)
-
-        
+    if(c<ma):
+        ma=c
+print(ma)
