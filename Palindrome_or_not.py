@@ -1,10 +1,7 @@
-def ispalin(ss):
-    return ss == ss[::-1]
-    
-s=str(input())
-ss=s.lower()
-ans=ispalin(ss)
-if (ans):
-    print("True")
+s=input()
+s.lower()
+v=s[::-1]
+if v.lower()==s.lower() :
+    print(True)
 else:
-    print("False")
+    print(False)
