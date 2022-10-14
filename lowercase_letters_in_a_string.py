@@ -1,8 +1,8 @@
-n=input()
-lc='abcdefghijklmnopqrstuvwxyz'
+s=list(map(str,input().split()))
+a="qwertyuiopasdfghjklzxcvbnm"
 c=0
-for i in n:
+for i in s:
     for j in i:
-        if j in lc:
+        if j in a:
             c+=1
 print(c)
