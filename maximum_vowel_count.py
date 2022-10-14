@@ -1,12 +1,12 @@
-a=input()
-arr=list(a.split())
-vo='aeiouAEIOU'
-v=[]
-for i in arr:
+s=input()
+z=s.split()
+ma=0
+v="aeiouAEIOU"
+for i in z:
     c=0
-    for j in i:
-        if j in (vo):
+    for j in range(len(i)):
+        if i[j] in v:
             c+=1
-            v.append(c)
-print(max(v))
-        
+    if(c>ma):
+        ma=c
+print(ma)     
