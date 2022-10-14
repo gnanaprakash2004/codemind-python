@@ -1,15 +1,25 @@
 a,b=map(int,input().split())
-ar1=list(map(int,input().split()))
-ar2=list(map(int,input().split()))
-s=[]
-for i in ar1:
-    if i not in ar2:
-        if i not in s:
-            s.append(i)
-        ##print(s)
-for i in ar2:
-    if i not in ar1:
-        if i not in s:
-            s.append(i)
-       ## print(s)
-print(len(s))
+arr=list(map(int,input().split()))
+arr2=list(map(int,input().split()))
+x=0
+for i in range(a):
+    for j in range(a):
+        if i!=j:
+            if arr[i]==arr[j]:
+                 if arr[i]!=-1000:
+                     arr[j]=-1000
+for i in range(b):
+    for j in range(b):
+        if i!=j:
+            if arr2[i]==arr2[j]:
+                if arr2[i]!=-100:
+                    arr2[j]=-100
+for i in arr:
+    if i!=-1000:
+        if i  not in arr2:
+            x+=1
+for i in arr2:
+    if i!=-100:
+        if i not in arr:
+           x+=1
+print(x)
