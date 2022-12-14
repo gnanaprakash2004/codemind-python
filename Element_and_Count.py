@@ -1,8 +1,8 @@
 n=int(input())
-a=list(map(int,input().split()))
-ar=[]
-for i in a:
-    if i not in ar:
-        ar.append(i)
-for i in ar:
-    print(i,a.count(i),end=" ")
+l=list(map(int,input().split()))
+b=[]
+for i in range(n):
+    if l[i] not in b:
+        b.append(l[i])
+        print(l[i],l.count(l[i]),end=' ')
+    
