@@ -1,14 +1,12 @@
 n=int(input())
-a=list(map(int,input().split()))
+l=list(map(int,input().split()))
 k=int(input())
-ar=[]
-for i in a:
-    if i not in ar:
-        ar.append(i)
-c=0
-for i in ar:
-    if k==a.count(i):
-        c=1
-        print(i,end=" ")
-if c==0:
+b=[]
+for i in range(n):
+    if(l.count(l[i])==k):
+        if l[i] not in b:
+            b.append(l[i])
+if(len(b)==0):
     print(-1)
+else:
+    print(*b)
