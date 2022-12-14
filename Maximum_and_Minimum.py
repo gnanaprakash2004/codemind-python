@@ -10,4 +10,3 @@ else:
         
     b=set(b)
     print(min(b),max(b))
-    
